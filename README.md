@@ -21,7 +21,7 @@ Yenten
 
 
 
-**Download binary miner for windows x64** - https://github.com/cpu-pool.com/cpuminer-opt-yespower/releases
+**Download binary miner for windows x64** - https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/
 
 **CPU mining profit calculator** - https://cpu-mining.info/
 
