@@ -29,6 +29,7 @@ affinity sample
 ---------
 
 option: ``` --cpu-affinity=0x555```
+and do not forget ```-t 6``` parametrs (6 - number of threads)
 
                           Good for 16 cores
                           Cores 0,1
