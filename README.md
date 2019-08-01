@@ -96,6 +96,9 @@ option: ``` --cpu-affinity=0x555```
                           0x55555555
 
 
+sample for CPU 12 threads and 6 cores
+```cpuminer.exe -a cpupower -o stratum+tcp://cpu-pool.com:63388 -u WALLET_ADDRESS -t 6 --cpu-affinity=0x555```
+
 --------------------
 
 cpuminer-opt is a fork of cpuminer-multi by TPruvot with optimizations
