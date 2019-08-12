@@ -564,6 +564,7 @@ enum algos {
         ALGO_YESPOWERR16,
         ALGO_CPUPOWER,
         ALGO_YESPOWERURX,
+	ALGO_YESPOWERLITB,
         ALGO_ZR5,
         ALGO_COUNT
 };
@@ -650,6 +651,7 @@ static const char* const algo_names[] = {
 	"yespowerr16",
   "cpupower",
   "yespowerurx",	
+  "yespowerlitb",
         "zr5",
         "\0"
 };
@@ -792,6 +794,7 @@ Options:\n\
                           yespowerr16   Yenten (YTN)\n\
                           cpupower      CPUchain (CPU)\n\
                           yespowerurx   Uranium-X (URX)\n\
+                          yespowerlitb  LightBit (LITB)\n\			  
                           yescryptr32   WAVI\n\
                           zr5           Ziftr\n\
   -o, --url=URL         URL of mining server\n\
