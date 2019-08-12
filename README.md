@@ -7,6 +7,10 @@ cpuminer-opt-cpupower
 
 http://cpu-pool.com 
 
+LightBit
+``cpuminer-sse2-lightbit.exe -a yespowerlitb -o stratum+tcp://cpu-pool.com:63398 -u WALLET_ADDRESS
+``
+
 CPUchain
 ``cpuminer.exe -a cpupower -o stratum+tcp://cpu-pool.com:63388 -u WALLET_ADDRESS``
 
@@ -20,6 +24,8 @@ Yenten
 ``cpuminer.exe -a yespowerr16 -o stratum+tcp://cpu-pool.com:63368 -u WALLET_ADDRESS``
 
 
+
+**Linux and Ubuntu miner** - https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/v1.0/Cpuminer-opt-cpupower-linux64.tar.gz
 
 **Download binary miner for windows x64** - https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/
 
@@ -231,6 +237,7 @@ Supported Algorithms
                           yespowerr16   Yenten                          
                           cpupower      CPUchain                          
                           yespowerurx   Uranium-X                                                    
+                          yespowerlitb  LightBit                                                                              
                           zr5           Ziftr
 
 Errata
