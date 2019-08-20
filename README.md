@@ -31,6 +31,18 @@ Yenten
 
 **CPU mining profit calculator** - https://cpu-mining.info/
 
+Compile Ubuntu 16.04, 18.04, 19.04
+---------
+```
+sudo apt-get install -y git
+git clone https://github.com/cpu-pool/cpuminer-opt-cpupower.git
+cd cpuminer-opt-cpupower
+sudo apt-get install -y automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++
+sudo apt-get install -y lib32z1-dev
+chmod +x build.sh
+./build.sh
+```
+
 affinity sample
 ---------
 
