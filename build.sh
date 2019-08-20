@@ -10,6 +10,7 @@
 make distclean || echo clean
 
 rm -f config.status
+chmod +x autogen.sh
 ./autogen.sh || echo done
 
 # Ubuntu 10.04 (gcc 4.4)
