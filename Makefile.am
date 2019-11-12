@@ -253,6 +253,9 @@ cpuminer_SOURCES = \
   algo/yespower/yespower.c \
   algo/yespower/sha256-P.c \
   algo/yespower/yespower-opt.c \
+  algo/yespower2b/yespower-miner.c \
+  algo/yespower2b/crypto/blake2b.c \
+  algo/yespower2b/yespower.c \
   algo/yescrypt/yescrypt.c \
   algo/yescrypt/sha256_Y.c \
   algo/yescrypt/yescrypt-best.c

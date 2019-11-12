@@ -238,6 +238,7 @@ bool register_algo_gate( int algo, algo_gate_t *gate )
      case ALGO_CPUPOWER:     register_cpupower_algo     ( gate ); break;
      case ALGO_YESPOWERURX:  register_yespowerurx_algo  ( gate ); break;       
      case ALGO_YESPOWERLITB:  register_yespowerlitb_algo  ( gate ); break;              
+	 case ALGO_POWER2B: 	 register_power2b_algo		  ( gate ); break;              
      case ALGO_YESPOWER:     register_yespower_algo     ( gate ); break;
     default:
         applog(LOG_ERR,"FAIL: algo_gate registration failed, unknown algo %s.\n", algo_names[opt_algo] );
