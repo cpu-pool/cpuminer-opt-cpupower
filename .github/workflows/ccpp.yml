@@ -14,10 +14,10 @@ jobs:
     - name: Set-up autoconf
       run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
     - name: configure
-      run: chmod +x ./configure && ./configure --with-curl
+      run: chmod +x ./configure && ./configure --with-crypto --with-curl
     - name: make
       run: make
     - name: make check
       run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: CPU test
+      run: ./cpuminer --cputest
