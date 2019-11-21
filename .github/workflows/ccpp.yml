@@ -9,10 +9,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: autogen
-      run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
     - name: Get libcurl-dev package
       run: sudo apt-get install libcurl4-openssl-dev
+    - name: Set-up autoconf
+      run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
     - name: configure
       run: chmod +x ./configure && ./configure
     - name: make
