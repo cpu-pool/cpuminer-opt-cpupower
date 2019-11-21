@@ -12,7 +12,7 @@ jobs:
     - name: Get libcurl-dev package
       run: sudo apt-get install libcurl4-openssl-dev
     - name: Set-up autoconf
-      run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
+      run: ./autogen.sh
     - name: configure
       run: chmod +x ./configure && ./configure --with-crypto --with-curl
     - name: make
