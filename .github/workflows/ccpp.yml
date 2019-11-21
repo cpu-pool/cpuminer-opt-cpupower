@@ -12,9 +12,7 @@ jobs:
     - name: autogen
       run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
     - name: Get libcurl-dev package
-      uses: mstksg/get-package@v1
-      with:
-        apt-get: libcurl-dev
+      run: sudo apt-get install libcurl4-openssl-dev
     - name: configure
       run: chmod +x ./configure && ./configure
     - name: make
