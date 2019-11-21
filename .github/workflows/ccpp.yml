@@ -14,7 +14,7 @@ jobs:
     - name: Set-up autoconf
       run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
     - name: configure
-      run: chmod +x ./configure && ./configure
+      run: chmod +x ./configure && ./configure --with-curl
     - name: make
       run: make
     - name: make check
