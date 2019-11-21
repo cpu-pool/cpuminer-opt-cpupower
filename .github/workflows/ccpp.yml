@@ -11,8 +11,10 @@ jobs:
     - uses: actions/checkout@v1
     - name: autogen
       run: aclocal && autoheader && automake --foreign --add-missing --force-missing --copy && autoconf
-    - name: install libcurl-dev
-      run: apt-get install libcurl-dev
+    - name: Get libcurl-dev package
+      uses: mstksg/get-package@v1
+      with:
+        apt-get: libcurl-dev
     - name: configure
       run: chmod +x ./configure && ./configure
     - name: make
