@@ -7,8 +7,12 @@ cpuminer-opt-cpupower
 
 http://cpu-pool.com 
 
+InterCoin
+``cpuminer.exe -a yespowerinter -o stratum+tcp://cpu-pool.com:63328 -u WALLET_ADDRESS
+``
+
 LightBit
-``cpuminer-sse2-lightbit.exe -a yespowerlitb -o stratum+tcp://cpu-pool.com:63398 -u WALLET_ADDRESS
+``cpuminer.exe -a yespowerlitb -o stratum+tcp://cpu-pool.com:63398 -u WALLET_ADDRESS
 ``
 
 CPUchain
