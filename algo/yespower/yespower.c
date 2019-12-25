@@ -59,6 +59,11 @@ void yespower_hash( const char *input, char *output, uint32_t len )
 				static const yespower_params_t v5 = {YESPOWER_0_9, 2048, 32, "LITBpower: The number of LITB working or available for proof-of-work mining", 73};
 				yespower_tls( (yespower_binary_t*)input, len, &v5, (yespower_binary_t*)output ); 
 	}	
+   if (verstring==6)
+   {
+				static const yespower_params_t v6 = {YESPOWER_0_9, 2048, 32, "InterITC", 8};
+				yespower_tls( (yespower_binary_t*)input, len, &v6, (yespower_binary_t*)output ); 
+	}	
 }
 
 int scanhash_yespower( int thr_id, struct work *work, uint32_t max_nonce,
@@ -151,5 +156,16 @@ bool register_yespowerlitb_algo( algo_gate_t* gate )
   gate->hash          = (void*)&yespower_hash;
   gate->set_target    = (void*)&scrypt_set_target;
   verstring=5;
+  return true;
+};
+
+bool register_yespowerinter_algo( algo_gate_t* gate )
+{
+  gate->optimizations = SSE2_OPT | SHA_OPT;
+  gate->get_max64     = (void*)&yespower_get_max64;
+  gate->scanhash      = (void*)&scanhash_yespower;
+  gate->hash          = (void*)&yespower_hash;
+  gate->set_target    = (void*)&scrypt_set_target;
+  verstring=6;
   return true;
 };
