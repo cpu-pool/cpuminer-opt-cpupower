@@ -565,6 +565,7 @@ enum algos {
         ALGO_CPUPOWER,
         ALGO_YESPOWERURX,
 	ALGO_YESPOWERLITB,
+	ALGO_YESPOWERINTER,
 	ALGO_POWER2B,
         ALGO_ZR5,
         ALGO_COUNT
@@ -653,6 +654,7 @@ static const char* const algo_names[] = {
   "cpupower",
   "yespowerurx",	
   "yespowerlitb",
+  "yespowerinter",
   "power2b",
         "zr5",
         "\0"
@@ -797,6 +799,7 @@ Options:\n\
                           cpupower      CPUchain (CPU)\n\
                           yespowerurx   Uranium-X (URX)\n\
                           yespowerlitb  LightBit (LITB)\n\
+						  yespowerinter  Intercoin (ITC)\n\
 						  power2b  MicroBitcoin (MBC)\n\
                           yescryptr32   WAVI\n\
                           zr5           Ziftr\n\
