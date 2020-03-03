@@ -27,6 +27,15 @@ Uranium-X
 Yenten
 ``cpuminer.exe -a yespowerr16 -o stratum+tcp://cpu-pool.com:63368 -u WALLET_ADDRESS``
 
+Bellcoin
+``cpuminer.exe -a yespower -o stratum+tcp://cpu-pool.com:63338 -u WALLET_ADDRESS``
+
+Microbitcoin
+``cpuminer.exe -a power2b -o stratum+tcp://cpu-pool.com:63408 -u WALLET_ADDRESS``
+
+Sugarchain
+``cpuminer.exe -a yespowersugar -o stratum+tcp://cpu-pool.com:63418 -u WALLET_ADDRESS``
+
 
 
 **Linux and Ubuntu miner** - https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/v1.0/Cpuminer-opt-cpupower-linux64.tar.gz
