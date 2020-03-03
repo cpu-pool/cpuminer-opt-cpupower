@@ -564,6 +564,7 @@ enum algos {
         ALGO_YESPOWERR16,
         ALGO_CPUPOWER,
         ALGO_YESPOWERURX,
+		ALGO_YESPOWERSUGAR,
 	ALGO_YESPOWERLITB,
 	ALGO_YESPOWERINTER,
 	ALGO_POWER2B,
@@ -652,7 +653,8 @@ static const char* const algo_names[] = {
 	"yespower",
 	"yespowerr16",
   "cpupower",
-  "yespowerurx",	
+  "yespowerurx",
+  "yespowersugar",  
   "yespowerlitb",
   "yespowerinter",
   "power2b",
@@ -798,6 +800,7 @@ Options:\n\
                           yespowerr16   Yenten (YTN)\n\
                           cpupower      CPUchain (CPU)\n\
                           yespowerurx   Uranium-X (URX)\n\
+						  yespowersugar   Sugarchain (SUGAR)\n\
                           yespowerlitb  LightBit (LITB)\n\
 						  yespowerinter  Intercoin (ITC)\n\
 						  power2b  MicroBitcoin (MBC)\n\
