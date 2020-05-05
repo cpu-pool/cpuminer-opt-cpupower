@@ -1,0 +1,23 @@
+name: Build CPU miner
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Get libcurl-dev package
+      run: sudo apt-get install libcurl4-openssl-dev
+    - name: Set-up autoconf
+      run: chmod +x ./autogen.sh && ./autogen.sh
+    - name: configure
+      run: chmod +x ./configure && ./configure --with-crypto --with-curl
+    - name: make
+      run: make
+    - name: make check
+      run: make check
+    - name: CPU test
+      run: ./cpuminer --cputest
